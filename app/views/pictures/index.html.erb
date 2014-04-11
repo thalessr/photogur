@@ -4,6 +4,7 @@
     <li><%= picture.title %></li>
   <% end %>
 </ul>
+<h1> <%= Picture.created_before(1.month.ago).count %> Pictures created one month ago</h1>
 
 
 <h1>Pictures [<%= @pictures.length %>]</h1>
