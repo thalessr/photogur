@@ -1,3 +1,11 @@
+<h1>Most recent pictures</h1>
+<ul>
+  <% @most_recent_pictures.each do |picture| %>
+    <li><%= picture.title %></li>
+  <% end %>
+</ul>
+
+
 <h1>Pictures [<%= @pictures.length %>]</h1>
 <%= link_to 'New Picture', "/pictures/new" %>
 <% @pictures.each do |pic| %>
